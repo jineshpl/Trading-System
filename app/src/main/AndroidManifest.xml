@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phase2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".item_browsing_activities.DisplayTradeOptionsActivity"/>
+        <activity android:name=".trader_activities.ChangeHomecity" />
+        <activity android:name=".tutorial_activities.TutorialBrowseItemsActivity" />
+        <activity android:name=".menus.TutorialActivity" />
+        <activity android:name=".undo_activities.UndoRemoveItem" />
+        <activity android:name=".undo_activities.UndoProposeTrade" />
+        <activity android:name=".undo_activities.UndoConfirmTrade" />
+        <activity android:name=".undo_activities.UndoAgreeTrade" />
+        <activity android:name=".undo_activities.UndoEditMeeting" />
+        <activity android:name=".undo_activities.UndoMenu" />
+        <activity android:name=".undo_activities.UndoActivity" />
+        <activity android:name=".trader_activities.AddNewItemActivity" />
+        <activity android:name=".item_browsing_activities.ItemOptionsActivity" />
+        <activity android:name=".item_browsing_activities.SelectItemActivity" />
+        <activity android:name=".item_browsing_activities.EnterInfoProposeTradeActivity" />
+        <activity android:name=".trader_activities.ChangeTraderPassword" />
+        <activity android:name=".admin_activities.ApproveItems" />
+        <activity android:name=".browse_trades_activities.EditMeetingActivity" />
+        <activity android:name=".admin_activities.AllTradersMenu" />
+        <activity android:name=".trader_activities.RequestAdminActivity" />
+        <activity android:name=".admin_activities.RequestedUnfrozenMenu" />
+        <activity android:name=".admin_activities.FlaggedAccountsMenu" />
+        <activity android:name=".admin_activities.ManageFrozenAccount" />
+        <activity android:name=".admin_activities.DisplayChangeLimitActivity" />
+        <activity android:name=".admin_activities.ChangeLimitActivity" />
+        <activity android:name=".admin_activities.ViewTradersActivity" />
+        <activity android:name=".admin_activities.ChangePasswordActivity" />
+        <activity android:name=".menus.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".menus.TraderActivity" />
+        <activity android:name=".menus.AdminActivity" />
+        <activity android:name=".admin_activities.ApproveAdminActivity" />
+        <activity android:name=".menus.SignupActivity" />
+        <activity android:name=".browse_trades_activities.BrowseTradesActivity" />
+        <activity android:name=".browse_trades_activities.EditTradeActivity" />
+        <activity android:name=".item_browsing_activities.BrowseItemsActivity" />
+        <activity android:name=".trader_activities.EditInventoryActivity" />
+        <activity android:name=".trader_activities.EditWishlistActivity" />
+        <activity android:name=".trader_activities.ViewMyUserInfoActivity" />
+    </application>
+
+</manifest>

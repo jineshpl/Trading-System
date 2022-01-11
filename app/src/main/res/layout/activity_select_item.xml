@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item_browsing_activities.SelectItemActivity">
+
+    <TextView
+        android:id="@+id/availableItems"
+        android:layout_width="381dp"
+        android:layout_height="74dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/your_items"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/allItemsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/availableItems"
+        android:layout_marginTop="20dp"
+        android:text="@string/choose_item" />
+
+    <ListView
+        android:layout_below="@+id/allItemsDescription"
+        android:layout_marginTop="10dp"
+        android:id="@+id/selectItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

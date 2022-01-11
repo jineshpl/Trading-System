@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menus.TutorialActivity">
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="375dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/welcomeTutorial"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+
+    <Button
+        android:id="@+id/browseItemsButton"
+        android:layout_width="156dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onBrowseItems"
+        android:text="@string/trader_option1"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prompt" />
+
+    <Button
+        android:id="@+id/browseTradesButton"
+        android:layout_width="156dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onBrowseTrades"
+        android:text="@string/trader_option2"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toEndOf="@+id/browseItemsButton"
+        app:layout_constraintTop_toBottomOf="@+id/prompt" />
+
+    <Button
+        android:id="@+id/editInventoryButton"
+        android:layout_width="156dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onEditInventory"
+        android:text="@string/trader_option3"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/browseItemsButton" />
+
+    <Button
+        android:id="@+id/editWishListButton"
+        android:layout_width="156dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onEditWishList"
+        android:text="@string/trader_option4"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toEndOf="@+id/requestUnfreezeButton"
+        app:layout_constraintTop_toBottomOf="@+id/viewInfoButton" />
+
+    <Button
+        android:id="@+id/requestUnfreezeButton"
+        android:layout_width="156dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onRequestUnfreeze"
+        android:text="@string/trader_option7"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editInventoryButton" />
+
+    <Button
+        android:id="@+id/viewInfoButton"
+        android:layout_width="156dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="onViewInfo"
+        android:text="@string/trader_option6"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toEndOf="@+id/editInventoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/browseTradesButton" />
+
+    <Button
+        android:id="@+id/changePassButton"
+        android:layout_width="156dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:onClick="onChangePassword"
+        android:text="@string/change_password"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestUnfreezeButton"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Button
+        android:id="@+id/changeHomeCityButton"
+        android:layout_width="156dp"
+        android:layout_height="104dp"
+        android:onClick="onChangeHomeCity"
+        android:text="@string/Edit_Homecity_button"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toEndOf="@+id/changePassButton"
+        app:layout_constraintTop_toBottomOf="@+id/editWishListButton"
+        app:layout_constraintVertical_bias="0.121" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

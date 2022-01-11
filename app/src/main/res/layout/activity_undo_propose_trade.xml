@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".undo_activities.UndoProposeTrade">
+
+    <TextView
+        android:id="@+id/undoProposeTrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/undoProposeTrade"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/undoProposeTradeDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/undoProposeTrade"
+        android:layout_centerHorizontal="true"
+        android:text="@string/undoTradeDescription" />
+
+    <ListView
+        android:layout_below="@+id/undoProposeTradeDescription"
+        android:layout_marginTop="10dp"
+        android:id="@+id/proposedTrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

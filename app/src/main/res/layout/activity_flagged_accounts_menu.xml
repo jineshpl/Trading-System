@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_activities.FlaggedAccountsMenu">
+
+    <TextView
+        android:id="@+id/flaggedAccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/FlaggedAccounts"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/flaggedDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flaggedAccounts"
+        android:layout_centerHorizontal="true"
+        android:text="@string/FreezeAccountDescription" />
+
+
+
+    <ListView
+        android:layout_below="@+id/flaggedDescription"
+        android:layout_marginTop="10dp"
+        android:id="@+id/flagged"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</RelativeLayout>
