@@ -16,9 +16,9 @@ IntelliJ.
 For the TA's convenience we have commented out the code responsible for that in EditTradeActivity to
 make testing the program easier. If desired, the code can be un-commented so that it checks the date.
 
-#Key Design Decisions
+# Key Design Decisions
 
-##Controllers/Presenters
+## Controllers/Presenters
  The decision to keep Controllers and Presenters together the same class was not a light one.
 However, due to our decision of using Android Studio, we realized that separating them would lead 
 to the opposite of good code design. Separating the controller and presenter is done with the 
@@ -63,7 +63,7 @@ Ultimately, this decision was made after discussion with the professor and by ba
 and SOLID principles against clean architecture structure. We thought the former two design principles
  were more important than the latter in this case.
  
- #BundleActivity
+ # BundleActivity
  We decided to make a BundleActivity abstract class for most of our activities (but not all). It
  handles the bundle of data that is being passed between activities as well as help take care of 
  back button functionality for all the classes. It also has variables for the String keys in the 
@@ -75,14 +75,14 @@ and SOLID principles against clean architecture structure. We thought the former
  Overall, we felt this was a great class to have because it reduced a lot of repeated code throughout
  the program and also increased encapsulation.
  
- #UpdatableBundleActivity
+ # UpdatableBundleActivity
  There were a few activities that used BundleActivity, but needed their Manager classes to be 
  updated after exiting from the previous activity. For this we used an abstract class UpdatableBundleActivity
  which extends the BundleActivity abstract class and reduced the repeated code needed to override
  the onActivityResult method in all of these classes.
 
 
-##Undo Actions
+## Undo Actions
 Undo propose a Trade - We thought this was a unreasonable thing to allow Traders to undo because they should really only be able to undo
                        a trade proposal before both users have agreed to a meeting to prevent abuse of the meeting system.
                        In that case we have provided the option to decline a trade for both users so there is no reason to undo.
@@ -121,26 +121,26 @@ Undo confirming a trade - This is a reasonable thing to allow users to undo so w
                           edits should be made, as edits past this date can be used to abuse the system (making a trade incomplete
                           and thus potentially flagging a user).
 
-##Online meetings:
+## Online meetings:
 Because there it is very hard to oversee "item security" with online meetings we made it so that a
 trader cannot have a temporary online meeting- All online trades are permanent.
 
-#Design Patterns
-#Dependency Injection
+# Design Patterns
+# Dependency Injection
 We used Dependency Injection in many of our Use Case methods which took in a List. We often 
 used an ArrayList in place.
 #Factory Method
 We created a class called DialogFactory that created Dialogs for many of our Activities.
 This helped resolve much of our duplicate code and many constructor calls being called in many 
 activities that were using the Dialog popup from Android.
-#Observer 
+# Observer 
 Firstly, we used Button onClick Listeners that were built into Android Studio. This allowed us to
 launch Activities from an entirely separate Activity.
 In addition, we created our own form of the Observer design pattern with regard to the abstract 
 BundleActivity class that fit with our Android program design. We update the Use Case Classes
 whenever we press the back button in order to update the bundle inside the BundleActivity class.
 
-#List of Features we implemented
+# List of Features we implemented
 1. All mandatory features
  a. (the "new type of account" is involved in the Tutorial).
  b. The additional status is Inactive
